@@ -30,6 +30,7 @@ for t in time:
         I = float(I_list[-1])
         R = float(R_list[-1])
         
+        #apply SIR formulas:
         dS = -(b * S * I) / N
         dI = (b * S * I) / N - a * I
         dR = a * I
